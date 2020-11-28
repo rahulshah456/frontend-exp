@@ -1,0 +1,39 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.display-1 {
+    color: #23374d;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.list-group {
+    margin-left: 10%;
+    margin-right: 20%;;
+}
+
+.list-group-item-action:hover, .list-group-item-action:focus {
+    color: #1089ff;
+    background-color: #f8f9fa;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* scale center cover crop image */
+    object-position: center; /* Center the image within the element */
+}
