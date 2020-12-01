@@ -1,0 +1,109 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+:root {
+  font-size: 16px;
+  --bg-primary: #e5e5e5;
+  --bg-primary-light: #eeeeee;
+  --bg-secondary: #1089ff;
+  --bg-secondary-dark: #1a1b1e;
+  --bg-secondary-black: #212121;
+  --transition-speed: 600ms;
+}
+
+body {
+  background-color: var(--bg-secondary-dark);
+}
+
+
+.display-4 {
+  color: var(--bg-primary-light);
+  font-size: 13vh;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.nav {text-transform: capitalize;}
+.nav a{
+  color: white !important;
+  font-size: 1.2em !important;
+}
+
+.nav-link {
+  color: var(--bg-primary);
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  color: var(--bg-primary);
+}
+
+.navbar {
+  background-color: var(--bg-secondary-black);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.material-icons {
+  font-size: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+}
+
+
+$theme-colors: (
+  "primary": #71F9A8,
+  "dark": #25262A,
+  "gray-dark":#2D2E32,
+);
+
+.btn-outline-primary {
+    color:  #71F9A8;
+    background-color: transparent;
+    border-color: #71F9A8;
+
+}
+.btn-outline-primary:hover {
+  color: black;
+  background-color:#71F9A8;
+  border-color: #71F9A8;
+}
+
+
+
+.btn-success {
+  color: white;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.btn-success:focus, .btn-success.focus {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+}
